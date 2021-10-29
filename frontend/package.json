@@ -30,7 +30,13 @@
       "plugin:prettier/recommended"
     ]
   },
-  
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": "@babel/plugin-syntax-jsx"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,6 +52,7 @@
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "@babel/preset-react": "^7.10.1"
   }
 }
